@@ -1,0 +1,82 @@
+@model ContactViewModel
+@{
+    ViewBag.Title="About - Jason De Jesuz | Web Developer | Software Engineer | Designer";
+}
+        <div id="contact">
+                <div class="container">
+                    <div id="contact_text">
+                        <h2>Get in touch</h2>
+                        <hr id="contact_underline"></hr>
+                    </div>
+                    <div id="contact_details">
+                        <div id="form">
+                            <!-- Google Contact Form -->
+                            @using (Html.BeginForm("email", "Home", FormMethod.Post))
+                            {
+                            <form>
+                                <div asp-validation-summary="ModelOnly"></div>
+                                <label asp-for="Name">Your Name:</label>
+                                <br>
+                                <pre></pre>
+                                <input asp-for="Name" class="FormElement"/>
+                                <p>&nbsp;</p>
+                                <span asp-validation-for="Name"></span>
+                                <br />
+                                <label asp-for="Email">Email:</label>
+                                <br />
+                                <pre></pre>
+                                <input type="email" asp-for="Email" class="FormElement"/>
+                                <p>&nbsp;</p>
+                                <span asp-validation-for="Email"></span>
+                                <br />
+                                <label asp-for="Subject">Subject:</label>
+                                <br />
+                                <pre></pre>
+                                <input type="text" asp-for="Subject" class="FormElement"/>
+                                <p>&nbsp;</p>
+                                <span asp-validation-for="Subject"></span>
+                                <br />
+                                <label asp-for="Message">Message:</label>
+                                <br />
+                                <pre></pre>
+                                <textarea rows="4" asp-for="Message" id="msg"></textarea>
+                                <pre></pre>
+                                <span asp-validation-for="Message"></span>
+                                <br />
+                                <input type="submit" value="Send Message" />
+                                <div>@ViewBag.UserMessage</div>
+                            </form>
+                            }
+                        </div>
+                    </div>
+                        <!-- <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                                <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                    <div class="form-group">
+                                        <label class="form-laxbel" for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                                    </div>                            
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                                    </div>                            
+                                    <div class="form-group">
+                                        <label class="form-label" for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+                                    </div>                            
+                                    <div class="form-group">
+                                        <label class="form-label" for="message">Message</label>
+                                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-start-order" href="mail/mail.php">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      </div> -->
+        </div>
+
+        <script type="text/javascript" src="~/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="~/js/contact.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>

@@ -1,0 +1,70 @@
+@model IEnumerable<GithubViewModel>
+
+<div id="sw">
+    <h2>Software</h2>
+    <p>Here is a table of all my Software projects that i have built and made public on my GitHub profile.</p>
+    <pre></pre>
+    <table id="SoftwareTbl">
+        <tr>
+            <th>Project</th>
+            <th>Description</th> 
+            <th>Language</th>
+            <th>Size (Kb)</th>
+            <th>Stars</th>
+        </tr>
+        @foreach (var item in Model)
+        {       
+            <tr>
+                <td><a href= "@{@Html.DisplayFor(modelItem => item.html_url)}" target="_blank">@Html.DisplayFor(modelItem => item.name)</a></td>
+                <td>@Html.DisplayFor(modelItem => item.description)</td> 
+                <td>@Html.DisplayFor(modelItem => item.language)</td>
+                <td>@Html.DisplayFor(modelItem => item.size)</td> 
+                <td>@Html.DisplayFor(modelItem => item.stargazers_count)</td>
+            </tr>
+        }
+    </table>
+</div>
+
+<div id="tech" style="margin-top: 5%; ">
+    <h2 style="text-align:center;">TECHNOLOGY STACK</h2>
+    <h5 style="text-align:center;">BRIEF OVERVIEW OF THE ARCHITECTURE OF MY WEBSITE</h5>
+    <br/>
+    <div class="soft">
+        <div id="Front" class="threediff">
+            <h2>Front-End</h2>
+            <h5>HTML5 + CSS3 + Javascript</h5>
+            <pre></pre>
+            <ul>
+                <li>HTML and CSS to design and style the webpages.</li>
+                <li>Integrated C# ding into HTML.</li>
+                <li>Javascript to dynamically display html elements.</li>
+                <li>Using c# to render the body of each view.</li>
+            </ul>
+        </div>
+    <div id="back" class="threediff">
+         <h2>Back-End</h2>
+            <h5>ASP.NET Core + MVC</h5>
+            <pre></pre>
+            <ul>
+                <li>C# for controllers to handle page requests.</li>
+                <li>C# for ViewModels and Storing Json string values for table.</li>
+                <li>C# for handling Email Actions.</li>
+                <li>Used for business logic, automation, large data and web APIs</li>
+                <li>ASP.NET Core MVC is my main focus</li>
+            </ul>
+        </div>
+    <div id="deploy" class="threediff">
+         <h2>Deployment</h2>
+            <h5>Docker</h5>
+            <pre></pre>
+            <ul>
+                <li>Docker Container for each MicroService.</li>
+                <li>Nginx Controller connects the microservices together.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="~/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/js/software.js"></script>

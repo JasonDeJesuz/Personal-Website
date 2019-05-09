@@ -1,0 +1,1637 @@
+html    {
+    scroll-behavior: smooth!important;
+}
+
+body    {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+#mennav {
+    display: none;
+}
+#navbar_div {
+    display: block;
+}
+
+#intro_header   {
+    height: 100%;
+}
+
+.intro_container    {
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/hero.png"); 
+    background-repeat: no-repeat;
+    background-size: 60% 50%;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.intro #overlay_intro  {
+    background-size: 100% 100%;;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+}
+
+ #intro_text {
+    min-width: 768px;
+    height: 250px;
+    text-align: center;
+ }
+
+ #intro_text h1{
+     font-size: 70px;
+ }
+
+#intro_text p   {
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+#learnmore_btn {
+    /* border: white;
+    border-style: solid;
+    border-width: 0.1px; */
+    padding: 12px 20px;
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+#downarrowdiv   {
+    margin-top: 1%;
+}
+
+#downarrow  {
+    display:none;
+}
+
+/* .about_btn:hover {
+    background-color: black;
+    border: black;
+} */
+
+#navbar_div {
+    z-index: 9999;
+    transition: padding 500ms ease;
+}
+
+#navbar {
+    padding: 5px;
+    min-height: 50px;
+    /* background-color: #222; */
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5ad5, #c471edd7, #12c2e9d0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5ad3, #c471edd7, #12c2e9ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar_item   {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    /* padding-left: 4%;
+    padding-right: 4%; */
+}
+
+.navbar_item a {
+    color: white!important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Sticky {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navul  {
+    text-align: center;
+    text-decoration: none;
+    padding-left: 0%;
+}
+
+#About_title_center   {
+    padding: 45px 0 45px 0;
+    padding-top: 100px;
+    line-height: 20px;
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 30px;;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#About_div  {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about_underline {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 0;
+}
+
+.abt {
+    width: 50%;
+    min-height: 300px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+}
+
+#About_img  {
+    max-width: 50%;
+    display: inline-block;
+}
+
+#descrip    {
+    max-width:50%;
+    float: right;
+}
+
+#port_btn_div   {
+    padding-top: 15px;
+}
+
+#portfolio_btn  {
+    text-align: center;
+    border: #c471edd7;
+    border-style: solid;
+    border-width: 0.1px;
+    padding: 12px 20px;
+    color: #c471edd7;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+#portfolio_btn:hover    {
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+/****************/
+/*** SKILLS ***/
+/****************/
+
+.left, .right   {
+    display: inline-block;
+    width: 49%;
+}
+
+/* #Skills {
+    min-height: 700px;
+    background: #12c2e9cc;
+    background: -webkit-linear-gradient(to right, #f64f5ad5, #c471edd7, #12c2e9d0);
+    background: linear-gradient(to right, #f64f5ad3, #c471edd7, #12c2e9ce);
+} */
+
+#Skills_title_center {
+    padding: 45px 0 45px 0;
+    padding-top: 100px;
+    line-height: 20px;
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 30px;;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#skills_underline    {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 0;
+}
+
+#skills {
+	margin: 0 auto;
+	width: 80%;
+    max-width: 960px;
+    
+}
+
+#skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+#languages  {
+    text-align: center;
+}
+
+#languages > .lang {
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+}
+
+/**************/
+/* STATISTICS */
+/**************/
+
+#stats  {
+    display: table;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.stats_underline {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    border: 0;
+}
+
+.st {
+    display: table-cell;
+    width: 25%;
+}
+
+.dest    {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.des    {
+    text-align: center;
+    font-size: 25px;
+}
+
+/***********/
+/* Journey */
+/***********/
+
+#Journey_title_center   {
+    padding: 45px 0 45px 0;
+    padding-top: 100px;
+    line-height: 20px;
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 30px;;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#journey_underline {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 0;
+}
+
+  
+  /* ================ The Timeline ================ */
+  
+  .timeline {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+  }
+  
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient( #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 5;
+  }
+  
+  .timeline li {
+    padding: 1em 0;
+  }
+  
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .direction-l {
+    position: relative;
+    width: 300px;
+    float: left;
+    text-align: right;
+  }
+  
+  .direction-r {
+    position: relative;
+    width: 300px;
+    float: right;
+  }
+  
+  .flag-wrapper {
+    position: relative;
+    display: inline-block;
+    
+    text-align: center;
+  }
+  
+  .flag {
+    position: relative;
+    display: inline;
+    background: rgb(248,248,248);
+    padding: 6px 10px;
+    border-radius: 5px;
+    
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .direction-l .flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-r .flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid #f64f5a;
+    z-index: 10;
+  }
+  
+  .direction-r .flag:before {
+    left: -40px;
+  }
+  
+  .direction-l .flag:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+  }
+  
+  .direction-r .flag:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+  }
+  
+  .time-wrapper {
+    display: inline;
+    
+    line-height: 1em;
+    font-size: 0.66666em;
+    color: rgb(250,80,80);
+    vertical-align: middle;
+  }
+  
+  .direction-l .time-wrapper {
+    float: left;
+  }
+  
+  .direction-r .time-wrapper {
+    float: right;
+  }
+  
+  .time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248,248,248);
+  }
+  
+  .desc {
+    margin: 1em 0.75em 0 0;
+    
+    font-size: 0.77777em;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+  
+  .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
+  
+  /* ================ Timeline Media Queries ================ */
+  
+  @media screen and (max-width: 660px) {
+  
+  .timeline {
+       width: 100%;
+      padding: 4em 0 1em 0;
+  }
+  
+  .timeline li {
+      padding: 2em 0;
+  }
+  
+  .direction-l,
+  .direction-r {
+      float: none;
+      width: 100%;
+  
+      text-align: center;
+  }
+  
+  .flag-wrapper {
+      text-align: center;
+  }
+  
+  .flag {
+      background: rgb(255,255,255);
+      z-index: 15;
+  }
+  
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+      left: 50%;
+      content: ' ';
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-left: -9px;
+      background: #fff;
+      border-radius: 10px;
+      border: 4px solid #f64f5a;
+      z-index: 10;
+  }
+  
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      height: 0;
+      width: 0;
+      margin-left: -8px;
+      border: solid transparent;
+      border-bottom-color: rgb(255,255,255);
+      border-width: 8px;
+      pointer-events: none;
+  }
+  
+  .time-wrapper {
+      display: block;
+      position: relative;
+      margin: 4px 0 0 0;
+      z-index: 14;
+  }
+  
+  .direction-l .time-wrapper {
+      float: none;
+  }
+  
+  .direction-r .time-wrapper {
+      float: none;
+  }
+  
+  .desc {
+      position: relative;
+      margin: 1em 0 0 0;
+      padding: 1em;
+      background: rgb(245,245,245);
+      -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      
+    z-index: 15;
+  }
+  
+  .direction-l .desc,
+  .direction-r .desc {
+      position: relative;
+      margin: 1em 1em 0 1em;
+      padding: 1em;
+      
+    z-index: 15;
+  }
+  
+  }
+  
+  @media screen and (min-width: 400px ?? max-width: 660px) {
+  
+    .direction-l .desc,
+    .direction-r .desc {
+        margin: 1em 4em 0 4em;
+    }
+  
+  }
+
+  .timeline li{
+      margin-bottom: 50px;
+  }
+
+  /*******************/
+  /***** FOOTER ******/
+  /*******************/
+  #form > iframe    {
+      width: 100%;
+  }
+
+.maillink   {
+    text-decoration: none;
+    color:#f64f5a;
+}
+
+  #github   {
+      text-decoration: none;
+      color:#f64f5a;
+  }
+
+  #linkedin {
+      text-decoration: none;
+      color: #f64f5a;
+  }
+/* 
+  #contact  {
+      display: inline-block;
+  } */
+
+  #form {
+      text-align: center;
+  }
+
+  .FormElement {
+    border: none;
+    border-bottom: solid #444 0.5px;
+    width:40%;
+    font-size: 15px;
+    line-height: 2.25;
+  }
+
+  #msg  {
+    border: solid #444 0.5px;
+    width:40%;
+    font-size: 15px;
+  }
+  
+  #contact_underline {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 0;
+}
+
+  .sub  {
+      font-weight: bolder;
+  }
+
+  #footer_container  {
+    padding: 45px 0 45px 0;
+    line-height: 20px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #222;
+  }
+
+  #footer_container a   {
+      text-decoration: none;
+      color: #f64f5a;
+  }
+
+  #contact_text  {
+    padding: 45px 0 45px 0;
+    padding-top: 5%;
+    line-height: 20px;
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 30px;;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* #contact_details > div    {
+      display: inline-block;
+      width: 45%;
+      height: 100%;
+  } */
+
+/***********************/
+/***** COMING SOON *****/
+/***********************/
+
+#coming_title_center {
+    padding: 45px 0 45px 0;
+    padding-top: 100px;
+    line-height: 20px;
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#coming_underline    {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 0;
+}
+
+.underline  {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+    border: 0;
+}
+
+.parts  {
+    width: 50%;
+    min-height: 120px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+#blog_title {
+    width: 50%;
+} */
+
+/* #blog_description   {
+    width: 50%;
+} */
+
+.comingcenter   {
+    text-align: center;
+}
+
+/*******************/
+/**   VENTURES    **/
+/*******************/
+
+#ventures_title_center {
+    padding: 45px 0 45px 0;
+    /* line-height: 20px; */
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* .noncenter  {
+    text-align:left;
+} */
+
+/* SOFTWARE */
+#SoftwareTbl{
+    width:50%;
+    text-align:center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th  {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.soft {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sw {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.threediff  {
+    display: inline-block;
+    width: 33%;
+}
+
+#tech {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.threediff h2, h5 {
+    text-align: center;
+}
+
+/* GEAR */
+a    {
+    text-decoration: black;
+    color: black;
+    
+}
+
+a:hover  {
+    text-decoration: underline;
+}
+
+#tgear  {
+    padding-top: 5%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1366px) { /* whatever width you prefer */
+
+}
+
+@media screen and (max-width: 991px) {
+    /* Large tablet styles */
+
+    #intro_text	{
+		min-width: 100%;
+	}
+
+	/* #navul {
+        display:none;
+    } */
+
+    .Sticky {
+        position: initial; 
+    }
+
+    .navbar_item    {
+        display: block;
+    }
+    
+    .abt    {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #About_img  {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        padding: 2%;
+    }
+
+    #descrip    {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        float: none;
+    }
+
+    .st     {
+        display: block;
+        width:100%;
+        text-align:center;
+    }
+
+    #skills > li  {
+        padding-left:0;
+    }
+
+    .comingcenter   {
+        display: contents;
+    }
+
+    .left, .right   {
+        width:100%;
+    }
+
+    .parts{
+        margin-left: 0%;
+        margin-bottom: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    .soft {
+        display: block;
+    }
+
+    .parts > .left, .parts > .right {
+        width: 100%;
+    }
+
+    .left > ul, .right > ul     {
+        padding: 0%;
+    }
+    #contact_details    {
+        width: 100%;
+    }
+    .FormElement {
+        width: 90%;
+    }
+
+    #msg {
+        width: 90%;
+    }
+
+    #languages > .lang {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    /* MENU HAMBURGER */
+    #mennav {
+        display: block;
+    }
+    #navbar_div {
+        display: none;
+    }
+
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #s1 {
+        background: #f64f5a;
+    }
+    #s2 {
+        background: #c471ed;
+    }
+    #s3 {
+        background: #12c2e9;
+    }
+    
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu
+    {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    #contact_text {
+        padding-top: 10%;
+    }
+
+    #tgear  {
+        padding-top: 10%;
+    }
+
+    #sw {
+        padding-top: 10%;
+    }
+
+    .threediff  {
+        display: Block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px)    {
+    /* Media tablet Styles */
+
+    #intro_text	{
+		min-width: 100%;
+	}
+
+	/* #navul {
+        display:none;
+    } */
+
+    .Sticky {
+        position: initial; 
+    }
+
+    .navbar_item    {
+        display: block;
+    }
+    
+    .abt    {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #About_img  {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        padding: 2%;
+    }
+
+    #descrip    {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        float: none;
+    }
+
+    .st     {
+        display: block;
+        width:100%;
+        text-align:center;
+    }
+
+    #skills > li  {
+        padding-left:0;
+    }
+
+    .comingcenter   {
+        display: contents;
+    }
+
+    .left, .right   {
+        width:100%;
+    }
+
+    .parts{
+        margin-left: 0%;
+        margin-bottom: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    .soft {
+        display: block;
+    }
+
+    .parts > .left, .parts > .right {
+        width: 100%;
+    }
+
+    .left > ul, .right > ul     {
+        padding: 0%;
+    }
+    #contact_details    {
+        width: 100%;
+    }
+    .FormElement {
+        width: 90%;
+    }
+
+    #msg {
+        width: 90%;
+    }
+
+    #languages > .lang {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    /* MENU HAMBURGER */
+    #mennav {
+        display: block;
+    }
+    #navbar_div {
+        display: none;
+    }
+
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #s1 {
+        background: #f64f5a;
+    }
+    #s2 {
+        background: #c471ed;
+    }
+    #s3 {
+        background: #12c2e9;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu
+    {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    #contact_text {
+        padding-top: 10%;
+    }
+
+    #tgear  {
+        padding-top: 10%;
+    }
+
+    #sw {
+        padding-top: 10%;
+    }
+
+    .threediff  {
+        display: Block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px)    {
+    /* Phone styles */
+
+    #intro_text	{
+		min-width: 100%;
+	}
+
+	/* #navul {
+        display:none;
+    } */
+
+    .Sticky {
+        position: initial; 
+    }
+
+    .navbar_item    {
+        display: block;
+    }
+    
+    .abt    {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #About_img  {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        padding: 2%;
+    }
+
+    #descrip    {
+        max-width: 98%;
+        text-align: center;
+        display: block;
+        float: none;
+    }
+
+    .st     {
+        display: block;
+        width:100%;
+        text-align:center;
+    }
+
+    #skills > li  {
+        padding-left:0;
+    }
+
+    .comingcenter   {
+        display: contents;
+    }
+
+    .left, .right   {
+        width:100%;
+    }
+
+    .parts{
+        margin-left: 0%;
+        margin-bottom: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    .soft {
+        display: block;
+    }
+
+    .parts > .left, .parts > .right {
+        width: 100%;
+    }
+
+    .left > ul, .right > ul     {
+        padding: 0%;
+    }
+    #contact_details    {
+        width: 100%;
+    }
+    .FormElement {
+        width: 90%;
+    }
+
+    #msg {
+        width: 90%;
+    }
+
+    #languages > .lang {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    
+    /* MENU HAMBURGER */
+    #mennav {
+        display: block;
+    }
+    #navbar_div {
+        display: none;
+    }
+
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #s1 {
+        background: #f64f5a;
+    }
+    #s2 {
+        background: #c471ed;
+    }
+    #s3 {
+        background: #12c2e9;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu
+    {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #12c2e9cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+
+    #contact_text {
+        padding-top: 10%;
+    }
+
+    #tgear  {
+        padding-top: 10%;
+    }
+
+    #sw {
+        padding-top: 10%;
+    }
+
+    .threediff  {
+        display: Block;
+        width: 100%;
+    }
+}

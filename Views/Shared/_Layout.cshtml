@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+    <!-- Created by: Jason De Jesuz
+    License:  MIT License           -->
+
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134705195-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-134705195-2');
+        </script>
+        <title>@ViewBag.Title</title>
+        <link rel="shortcut icon" href="~/images/me.JPG"/>
+        <link href="~/css/style.css?version=53" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="ASP.NET, MVC, Software Engineer, Freelancer, Developer, Contracter, Websites, Freelance Web Developer, Freelance Developer, Freelance Engineer, HTML Developer,
+        CSS developer, Javascript developer, c# developer, Sql developer, Designer, freelance designer, contact freelancer, need a website, how much is a website, 
+        where to get a website, need a website, looking for developer, web designer, web designing, website guy, need website, Logo, Logo designing, logo designer, need a logo, desing a logo 
+        ,designer of a logo, logos from R1000, logos from R500, Websites from R3000, Website for R2000, Website for R3000, Websites for $100, Websites for $300, Websites between $100 and $1000,
+        Good webdesigner, good web developer, young developer, intermediate developer">
+        <meta name="description" content="Self-learning software engineering through research & development, specializing in HTMl, CSS, Javascript, SQL, C#. ">
+        <meta name="author" content="Jason De Jesuz">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#f64f5ad3"/>
+    </head>
+
+    <!-- Header -->
+    <header id="intro_header">
+        <nav id="mennav" role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span id="s1"></span>
+                <span id="s2"></span>
+                <span id="s3"></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                <a asp-controller="Home" asp-action="Index"><li>Jason De Jesuz</li></a>
+                <a asp-controller="Home" asp-action="Software"><li>Software</li></a>
+                <a asp-controller="Home" asp-action="Gear"><li>Tech Gear</li></a>
+                <a asp-controller="Home" asp-action="Contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+        <div class="share intro intro_container">
+            <!-- <img id="jasonlg" src="images/jason.png" width="175" height="175" style="position: absolute;"/> -->
+            <div id="overlay_intro">
+                <div id="intro_text">
+                    <h1 id="jasondjheader">Jason De Jesuz</h1>
+                    <p id="desc"></p>
+                    <a href="#About" class="about_btn" id="learnmore_btn">Learn More</a>
+                    <div id="downarrowdiv">
+                        <img id="downarrow" src="~/images/down.png" width="30" height="30" usemap="#downmap" alt="Down Arrow"/>
+
+                        <map name="downmap">
+                            <area shape="circle" coords="0,0,119" href="#About" alt="Down Arrow">
+                        </map>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar_div" class="share">
+            <div id="navbar">       
+                <ul id="navul">
+                    <li class="navbar_item"><a asp-controller="Home" asp-action="Index">Jason De Jesuz</a></li>
+                    <li class="navbar_item"><a asp-controller="Home" asp-action="Software">Software</a></li>
+                    <li class="navbar_item"><a asp-controller="Home" asp-action="Gear">Tech Gear</a></li>
+                    <li class="navbar_item"><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <body id="body" class="container">
+        @RenderBody(); 
+
+        @RenderSection("scripts",false);
+    </body>
+
+    <footer>
+
+        <div id="footer">
+            <div id="footer_container">
+                <small>STAY CONNECTED</small>
+                <pre></pre>
+                <div>
+                    <img src="~/images/github.png" alt="twitter-logo" class="logos" width="25px" height="25px" usemap="#github"/>
+                    <map name="github"><area shape="circle" coords="0,0,119" href="https://github.com/BroSnuffles" target="_blank"></map>
+                    <img src="~/images/twitter.png" alt="twitter-logo" class="logos" width="25px" height="25px" usemap="#twitter"/>
+                    <map name="twitter"><area shape="circle" coords="0,0,119" href="https://twitter.com/intent/user?screen_name=jasondejesuzz" target="_blank"></map>
+                    <img src="~/images/linkedin.png" alt="twitter-logo" class="logos" width="25px" height="25px" usemap="#linkedin"/>
+                    <map name="linkedin"><area shape="circle" coords="0,0,119" href="https://www.linkedin.com/in/jason-de-jesuz-83a7b6158" target="_blank"></map>
+                    <img src="~/images/skype.png" alt="twitter-logo" class="logos" width="25px" height="25px" usemap="#skype"/>
+                    <map name="skype"><area shape="circle" coords="0,0,119" href="https://join.skype.com/invite/bzFiNWpPcc37" target="_blank"></map>
+                </div>
+        </div>
+    </footer>
+
+
+</html>
