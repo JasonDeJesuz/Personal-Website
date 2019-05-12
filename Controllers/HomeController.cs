@@ -40,7 +40,6 @@ namespace Personal_Website_ASPNET.Controllers
         }
         private async Task<string> SendEmail(string name, string email, string subject, string messages)
         {
-            /* For secrity purposes my email details have not been included. */
             var message = new MailMessage();
             message.To.Add(new MailAddress("")); // receiver's email id
             message.From = new MailAddress("");  // sender's email id
@@ -51,7 +50,7 @@ namespace Personal_Website_ASPNET.Controllers
             {
                 var credential = new NetworkCredential
                 {
-                    UserName = "",  // sender's email id
+                    UserName = ",  // sender's email id
                     Password = ""  // password
                 };
                 smtp.Credentials = credential;
@@ -66,7 +65,7 @@ namespace Personal_Website_ASPNET.Controllers
         public IActionResult Software()
         {
             /* Retrieving the details from Github */
-            string uri = "https://api.github.com/users/BroSnuffles/repos";
+            string uri = "";   /* User profile on github i.e. https://api.github.com/users/{USER}/repos */
             HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format(uri));
 
             WebReq.Method = "GET";

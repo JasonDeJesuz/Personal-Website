@@ -704,6 +704,51 @@ h1, h2, h3, h4, h5, h6  {
       height: 100%;
   } */
 
+  #contactsubmit_btn {
+    text-align: center;
+    border: #c471edd7;
+    border-style: solid;
+    border-width: 0.1px;
+    padding: 12px 20px;
+    color: #c471edd7;
+    text-decoration: none;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+
+  #contactsubmit_btn:hover {
+    background: #12c2e9cc;
+    background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);
+    color: white;
+  }
+
+  #email {
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  /*SENT */
+  #greeen_saber {
+      display: inline-block;
+      width: 33%;
+  }
+
+  #tu {
+      display: inline-block;
+      width: 33%;
+  }
+  #sent_beach {
+      display: inline-block;
+      width: 33%;
+  }
+  #sent_page {
+      display: flex;
+      text-align: center;
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+
 /***********************/
 /***** COMING SOON *****/
 /***********************/
@@ -876,55 +921,14 @@ a:hover  {
     width: 33%;
 }
 
-/* SENT */
-
-/* ERROR */
-#sent_page {
-    margin-top: 5%;
-    text-align: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 99%;
-}
-
-#tu > h1    {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-#tu  {
-    display: inline-block;
-    width: 33%;
-}
-#sent_beach {
-    display: inline-block;
-    width: 33%;
-}
-#greeen_saber {
-    display: inline-block;
-    width: 33%;
-}
-
 @media screen and (max-width: 1366px) { /* whatever width you prefer */
 
 }
 
 @media screen and (max-width: 991px) {
     /* Large tablet styles */
-    #greeen_saber {
-        display: none;
-    }
-
-    #sent_beach {
-        display: none;
-    }
-
-    #tu {
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    .intro_container {
+        background-size: 98% 33%;
     }
 
     #intro_text	{
@@ -1028,7 +1032,8 @@ a:hover  {
     display: block;
     position: relative;
     top: 50px;
-    left: 50px;
+    /* left: 50px; */
+    padding-left: 15px;
     
     z-index: 1;
     
@@ -1130,9 +1135,12 @@ a:hover  {
     #menu
     {
     position: absolute;
-    width: 100%;
+    width: 98%;
     margin: -100px 0 0 -50px;
     padding: 50px;
+    /* padding-left: 50px;
+    padding-bottom: 50px; */
+    padding-right: 0%;
     padding-top: 125px;
     
     background: #12c2e9cc;  /* fallback for old browsers */
@@ -1181,24 +1189,38 @@ a:hover  {
     .threediff  {
         display: Block;
         width: 100%;
+    }
+
+    /*SENT */
+    #sent {
+        width: 100%;
+    }
+    #greeen_saber {
+        display: block;
+        width: 99%;
+    }
+
+    #tu {
+        display: block;
+        width: 99%;
+    }
+    #sent_beach {
+        display: block;
+        width: 99%;
+    }
+    #sent_page {
+        display: block;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        width: 100%
     }
 }
 
 @media screen and (max-width: 767px)    {
     /* Media tablet Styles */
-    #greeen_saber {
-        display: none;
-    }
-
-    #sent_beach {
-        display: none;
-    }
-
-    #tu {
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    .intro_container {
+        background-size: 98% 33%;
     }
 
     #intro_text	{
@@ -1303,7 +1325,8 @@ a:hover  {
     display: block;
     position: relative;
     top: 50px;
-    left: 50px;
+    /* left: 50px; */
+    padding-left: 15px;
     
     z-index: 1;
     
@@ -1405,10 +1428,11 @@ a:hover  {
     #menu
     {
     position: absolute;
-    width: 100%;
+    width: 98%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
+    padding-right: 0%;
     
     background: #12c2e9cc;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1456,25 +1480,38 @@ a:hover  {
     .threediff  {
         display: Block;
         width: 100%;
+    }
+
+    /*SENT */
+    #sent {
+        width: 100%;
+    }
+    #greeen_saber {
+        display: block;
+        width: 99%;
+    }
+
+    #tu {
+        display: block;
+        width: 99%;
+    }
+    #sent_beach {
+        display: block;
+        width: 99%;
+    }
+    #sent_page {
+        display: block;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        width: 100%
     }
 }
 
 @media screen and (max-width: 479px)    {
     /* Phone styles */
-
-    #greeen_saber {
-        display: none;
-    }
-
-    #sent_beach {
-        display: none;
-    }
-
-    #tu {
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    .intro_container {
+        background-size: 98% 33%;
     }
 
     #intro_text	{
@@ -1579,7 +1616,8 @@ a:hover  {
     display: block;
     position: relative;
     top: 50px;
-    left: 50px;
+    /* left: 50px; */
+    padding-left: 15px;
     
     z-index: 1;
     
@@ -1681,10 +1719,11 @@ a:hover  {
     #menu
     {
     position: absolute;
-    width: 100%;
+    width: 98%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
+    padding-right: 0%;
     
     background: #12c2e9cc;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f64f5a, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1732,5 +1771,30 @@ a:hover  {
     .threediff  {
         display: Block;
         width: 100%;
+    }
+
+    /*SENT */
+    #sent {
+        width: 100%;
+    }
+    #greeen_saber {
+        display: block;
+        width: 99%;
+    }
+
+    #tu {
+        display: block;
+        width: 99%;
+    }
+    #sent_beach {
+        display: block;
+        width: 99%;
+    }
+    #sent_page {
+        display: block;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        width: 100%
     }
 }

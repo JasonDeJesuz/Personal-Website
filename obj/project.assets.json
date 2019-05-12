@@ -12072,30 +12072,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JasonD\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/asgard/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JasonD\\Documents\\Projects\\Kizmeta\\Personal-Website-ASPNET\\Personal-Website-ASPNET.csproj",
+      "projectUniqueName": "/Users/asgard/Documents/Projects/Kizmeta/Personal-Website-ASPNET/Personal-Website-ASPNET.csproj",
       "projectName": "Personal-Website-ASPNET",
-      "projectPath": "C:\\Users\\JasonD\\Documents\\Projects\\Kizmeta\\Personal-Website-ASPNET\\Personal-Website-ASPNET.csproj",
-      "packagesPath": "C:\\Users\\JasonD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JasonD\\Documents\\Projects\\Kizmeta\\Personal-Website-ASPNET\\obj\\",
+      "projectPath": "/Users/asgard/Documents/Projects/Kizmeta/Personal-Website-ASPNET/Personal-Website-ASPNET.csproj",
+      "packagesPath": "/Users/asgard/.nuget/packages/",
+      "outputPath": "/Users/asgard/Documents/Projects/Kizmeta/Personal-Website-ASPNET/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\JasonD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/asgard/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

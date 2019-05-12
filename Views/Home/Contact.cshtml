@@ -1,7 +1,19 @@
 @model ContactViewModel
 @{
-    ViewBag.Title="About - Jason De Jesuz | Web Developer | Software Engineer | Designer";
+    ViewBag.Title="Contact - Jason De Jesuz | Web Developer | Software Engineer | Designer";
+    ViewBag.mail = "dejesuzjason@gmail.com";
 }
+
+        <!-- Recaptcha for contact -->
+        <script>
+
+        function onload() {
+            var element = document.getElementById('contactsubmit_btn');
+            element.onclick = validate;
+        }
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
         <div id="contact">
                 <div class="container">
                     <div id="contact_text">
@@ -10,15 +22,14 @@
                     </div>
                     <div id="contact_details">
                         <div id="form">
-                            <!-- Google Contact Form -->
                             @using (Html.BeginForm("email", "Home", FormMethod.Post))
                             {
-                            <form>
+                            <form id="contact_form" >
                                 <div asp-validation-summary="ModelOnly"></div>
                                 <label asp-for="Name">Your Name:</label>
                                 <br>
                                 <pre></pre>
-                                <input asp-for="Name" class="FormElement"/>
+                                <input asp-for="Name" class="FormElement" />
                                 <p>&nbsp;</p>
                                 <span asp-validation-for="Name"></span>
                                 <br />
@@ -43,10 +54,20 @@
                                 <pre></pre>
                                 <span asp-validation-for="Message"></span>
                                 <br />
-                                <input type="submit" value="Send Message" />
+                                <div id='recaptcha' class="g-recaptcha"
+                                data-sitekey="6LdaGKMUAAAAAO3ysQCOwM3zpeLjfvJ93PMhlauA"
+                                data-callback="onSubmit"
+                                data-size="invisible"></div>
+                                <input type="submit" value="Send Message" id="contactsubmit_btn"/>
                                 <div>@ViewBag.UserMessage</div>
                             </form>
                             }
+                        </div>
+                        <pre></pre>
+                        <div id="email">
+                            <p>OR</p>
+                            <pre></pre>
+                            <p>@ViewBag.mail</p>
                         </div>
                     </div>
                         <!-- <div class="row">
